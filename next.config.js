@@ -10,6 +10,14 @@ module.exports = {
         source: '/register',
         destination: '/auth/register',
       },
+      {
+        source: '/reset-password',
+        destination: '/auth/reset-password',
+      },
+      {
+        source: '/forgot-password',
+        destination: '/auth/forgot-password',
+      },
     ]
   },
 }
