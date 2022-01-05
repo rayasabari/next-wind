@@ -18,6 +18,10 @@ module.exports = {
         source: '/forgot-password',
         destination: '/auth/forgot-password',
       },
+      {
+        source: '/:username',
+        destination: '/profile/:username',
+      },
     ]
   },
 }

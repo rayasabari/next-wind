@@ -13,6 +13,7 @@ export default function Register() {
   const [errors, setErrors] = useState([]);
   const [form, setForm] = useState({
     name: '',
+    username: '',
     email: '',
     password: '',
     password_confirmation: ''
@@ -37,6 +38,11 @@ export default function Register() {
               <Label htmlFor="name">Name</Label>
               <Input value={form.name} onChange={(e) => setForm(form => ({ ...form, name: e.target.value }))} type="text" name="name" id="name" />
               {errors && errors.name && <Errors message={errors.name} />}
+            </div>
+            <div className="mb-5">
+              <Label htmlFor="username">Username</Label>
+              <Input value={form.username} onChange={(e) => setForm(form => ({ ...form, username: e.target.value }))} type="text" name="username" id="username" />
+              {errors && errors.username && <Errors message={errors.username} />}
             </div>
             <div className="mb-5">
               <Label htmlFor="email">Email</Label>

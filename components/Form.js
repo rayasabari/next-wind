@@ -8,8 +8,8 @@ export const Label = ({ children, ...props }) => {
   </label>
 }
 
-export const Button = ({ children, ...props }) => {
-  return <button {...props} className="px-4 h-10 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white focus:ring focus:ring-indigo-100 focus:outline-none">
+export const Button = ({ children, type, ...props }) => {
+  return <button type={type ? type : 'submit'} {...props} className="px-4 h-10 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white focus:ring focus:ring-indigo-100 focus:outline-none">
     {children}
   </button>
 }
