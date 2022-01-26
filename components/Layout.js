@@ -1,7 +1,5 @@
-import axios from "axios";
 import Head from "next/head"
 import { useRouter } from "next/router";
-import Notiflix from "notiflix";
 import { useEffect } from "react";
 import { useRecoilValueLoadable } from "recoil"
 import useVerifyEmail from "../hooks/useVerifyEmail";
@@ -24,7 +22,7 @@ export default function Layout({ title, children, middleware }) {
     <div>
       <Head>
         <title>
-          {title || 'RYSB '}
+          {title || 'Nextwind'}
         </title>
       </Head>
       {(authUser.contents && authUser.state === 'hasValue' && !authUser.contents.has_verified) &&

@@ -1,12 +1,12 @@
 {
-  "name": "rysb",
+  "name": "nextwind",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "serve": "yarn dev --hostname=rysb.test"
+    "serve": "yarn dev --hostname=nextwind.test"
   },
   "dependencies": {
     "@headlessui/react": "^1.4.2",

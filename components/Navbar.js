@@ -15,14 +15,14 @@ export default function Navbar() {
     setAuthCheck(false);
     router.replace('/login');
   }
-  useEffect(() => { }, [authUser.contents]);
+  useEffect(() => { }, [authUser.contents, setAuthCheck]);
   return (
     <div className="py-3 shadow-sm bg-white">
       <div className="max-w-screen-lg mx-auto">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <Link href={'/'}>
-              <a className="block px-4 py-2 rouded-lg hover:bg-indigo-50 font-medium trasition duration-300">RYSB</a>
+              <a className="block px-4 py-2 rouded-lg hover:bg-indigo-50 font-bold text-xl trasition duration-300">Nextwind</a>
             </Link>
             <Link href={'/dashboard'}>
               <a className="block px-4 py-2 rouded-lg hover:bg-indigo-50 font-medium trasition duration-300">Dashboard</a>

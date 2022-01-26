@@ -1,9 +1,11 @@
 import axios from "axios";
+import { useRouter } from "next/router";
 import Notiflix from "notiflix";
 import { useState } from "react";
 
 const useVerifyEmail = () => {
   const [loading, setLoading] = useState(false);
+  const router = useRouter();
   const resendEmailVerification = async () => {
     setLoading(true);
     Notiflix.Loading.standard('Please wait...');
