@@ -47,17 +47,17 @@ export default function Navbar() {
                   leaveFrom="transform scale-100 opacity-100"
                   leaveTo="transform scale-95 opacity-0"
                 >
-                  <Popover.Panel static className="absolute py-1 border rounded-xl shadow-md overflow-hidden bg-white w-56 right-0">
+                  <Popover.Panel static className="absolute py-1 border rounded-xl shadow-sm overflow-hidden bg-white w-56 right-0">
                     <Link href={`/${authUser.contents.username}`}>
-                      <a className="block px-4 py-2 hover:text-indigo-600 transition duration-300">View Profile</a>
+                      <a className="block px-4 py-2 hover:px-3 hover:border-l-4 hover:border-indigo-600 hover:text-indigo-600 transition duration-300">View Profile</a>
                     </Link>
                     <Link href={'/settings/profile'}>
-                      <a className="block px-4 py-2 hover:text-indigo-600 transition duration-300">Update Profile</a>
+                      <a className="block px-4 py-2 hover:px-3 hover:border-l-4 hover:border-indigo-600 hover:text-indigo-600 transition duration-300">Update Profile</a>
                     </Link>
                     <Link href={'/settings/password'}>
-                      <a className="block px-4 py-2 hover:text-indigo-600 transition duration-300">Update Password</a>
+                      <a className="block px-4 py-2 hover:px-3 hover:border-l-4 hover:border-indigo-600 hover:text-indigo-600 transition duration-300">Update Password</a>
                     </Link>
-                    <button type="button" onClick={logoutHandler} className="focus:outline-none w-full px-4 py-2 hover:text-indigo-600 text-left transition duration-300">Logout</button>
+                    <button type="button" onClick={logoutHandler} className="focus:outline-none w-full px-4 py-2 hover:px-3 hover:border-l-4 hover:border-indigo-600 hover:text-indigo-600 text-left transition duration-300">Logout</button>
                   </Popover.Panel>
                 </Transition>
               </Popover>
